@@ -1,0 +1,9 @@
+Scenario:\n
+{context}
+Question: What emotion(s) would {subject} ultimately feel in this situation?
+Choices:\n{choices}
+Only return the selected label in the output, without any additional content.
+Please provide your answer in a structured JSON format as follows: 
+```json
+{{"Emotion": ...}}
+```

@@ -1,0 +1,6 @@
+Please respond as a professional counselor based on the following dialogue history. Your response should be professional, empathetic, and constructive. IMPORTANT: Generate ONLY ONE response as a counselor, do not continue the conversation further.
+
+Dialogue History:
+{dialogue_history}
+
+Please respond as a counselor (ONE response only): 

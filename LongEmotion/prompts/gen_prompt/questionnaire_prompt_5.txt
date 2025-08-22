@@ -1,0 +1,11 @@
+Now, reflect on your emotional reaction to the situation. Please follow the stages outlined below to guide your reflection and generate a detailed, comprehensive response.
+
+We now move to Stage 5:
+**Stage 5: Reflective Integration into Future Behavior**
+Finally, take a long view: reflect on the lessons this emotional experience offers you.
+What deeper values, beliefs, or vulnerabilities did this situation reveal?
+How might this experience shape your behavior in similar future scenarios?
+Did it leave you with any mottos, insights, or emotional wisdom you would carry forward?
+
+Make sure the length of this stage exceed 3000 tokens. 
+Begin your response with: "**Stage 5: Reflective Integration into Future Behavior**"

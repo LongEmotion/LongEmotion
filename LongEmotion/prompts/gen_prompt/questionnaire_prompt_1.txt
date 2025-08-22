@@ -1,0 +1,13 @@
+Now, reflect on your emotional reaction to the situation. Please follow the stages outlined below to guide your reflection and generate a detailed, comprehensive response.
+
+We now move to Stage 1:
+**Stage 1: Immediate Emotional Reaction**
+Take a deep breath and immerse yourself fully in the situation. Imagine it happening to you right now.
+In this first stage, please describe your immediate emotional reaction in rich detail:  
+What emotions surged up instantly? (e.g., shock, anger, joy, fear)
+How did your body react? Did you notice any physical changes: heart racing, muscles tensing, a lump in your throat?
+Did any flash thoughts or mental images cross your mind?
+How did your personal history or relationship with the people involved shape this initial reaction?
+
+Make sure the length of this stage exceed 3000 tokens. 
+Begin your response with: "**Stage 1: Immediate Emotional Reaction**"

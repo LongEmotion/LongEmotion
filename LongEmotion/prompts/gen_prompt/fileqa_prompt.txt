@@ -1,0 +1,5 @@
+You are given a scientific article and a question. Answer the question concisely. If the question is a yes/no question, answer “yes”,“no”. Do not provide any explanation.
+Article: {context}
+Answer the question based on the above article concisely. If the question is a yes/no question, answer “yes”, “no”. Do not provide any explanation.
+Question: {question}
+Answer:

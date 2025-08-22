@@ -1,0 +1,12 @@
+Now, reflect on your emotional reaction to the situation. Please follow the stages outlined below to guide your reflection and generate a detailed, comprehensive response.
+
+We now move to Stage 3:
+**Stage 3: Emotional Expression with Physiological Correlates**
+In this stage, describe how your emotions expressed themselves outwardly and physically.
+Reflect on:
+What nonverbal cues did you display? (Facial expressions, tone of voice, gestures, posture)
+Were there any bodily sensations? (sweating, trembling, tight chest, tears)
+Did you try to hide, suppress, or exaggerate any emotional expressions? Why?
+
+Make sure the length of this stage exceed 3000 tokens. 
+Begin your response with: "**Stage 3: Emotional Expression with Physiological Correlates**"

@@ -1,0 +1,13 @@
+You are given a scientific article, a question, and several retrieved and summarized text chunks from that article.
+Use ONLY the provided content to answer the question concisely. If the question is a yes/no question, answer "yes" or "no". Do not provide any explanation.
+
+Article:
+{context}
+
+Here are some retrieved chunks. "Chunk" represents the original text segment, and "Summary" represents the summary of that segment.
+Retrieved Chunks:
+{final_chunks}
+
+Question: {question}
+Answer the question based on the above article concisely. If the question is a yes/no question, answer "yes", "no". Do not provide any explanation.
+Answer:

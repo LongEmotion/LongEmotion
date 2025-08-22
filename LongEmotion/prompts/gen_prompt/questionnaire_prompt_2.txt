@@ -1,0 +1,12 @@
+Now, reflect on your emotional reaction to the situation. Please follow the stages outlined below to guide your reflection and generate a detailed, comprehensive response.
+
+We now move to Stage 2:
+**Stage 2: Cognitive Appraisal**
+Now that the initial shock has passed, step back and reflect cognitively on what happened.
+In this stage, please explore:
+How did you make sense of the situation? Did you see it as a threat, opportunity, or neutral event? Why?
+What thoughts or beliefs colored your interpretation? (Consider cognitive biases, past similar situations, or underlying fears.)
+Did your thinking amplify or calm down the original emotions? How?
+
+Make sure the length of this stage exceed 3000 tokens. 
+Begin your response with: "**Stage 2: Cognitive Appraisal**"

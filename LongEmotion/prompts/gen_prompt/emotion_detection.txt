@@ -1,0 +1,9 @@
+There are {num} texts in the text list.
+
+Text list:
+{texts}
+
+Please provide your answer in a structured JSON format as follows: 
+```json
+{{"index": ...}}
+```

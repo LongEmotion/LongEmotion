@@ -1,0 +1,30 @@
+You are a psychological counseling expert. You have a psychological counseling report with the following content:
+Case_description: Describes the background and situation of the counseling case.
+Consultation_process: Details the counseling process, including key points and progress made in each session.
+Experience_and_reflection: Summarizes the experiences, reflections, and insights from the counseling sessions.
+
+Please summarize the following information based on the content provided:
+Causes: The underlying or immediate causes of the individual's psychological issues.
+Symptoms: The self-reported or observable physiological, psychological, or behavioral symptoms exhibited by the individual.
+Treatment process: The psychological therapy approaches, techniques, and stage-based interventions applied during the counseling process.
+Characteristics of the illness: Key features or developmental patterns of the psychological problem.
+Treatment effect: The impact or outcome of the treatment, including changes in the individual's condition.
+
+Input:
+Case_description:  {Case_description}
+Consultation_process: {Consultation_process}
+Experience_and_reflection: {Experience_and_reflection}
+
+There are some retrieved chunks and relevant analysis that may help you better understand the case. Please consider these additional insights when making your analysis:
+{retrieval_chunks_final}
+
+Example Output:
+```json
+{{  
+    "causes":"...",
+    "symptoms":"..."",
+    "treatment_process":"...",
+    "characteristics_of_illness":"...",
+    "treatment_effect":"..."
+    }}
+```

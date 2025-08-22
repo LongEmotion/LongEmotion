@@ -1,0 +1,11 @@
+You are an expert in emotional intelligence with a background in affective psychology. Your task is to read the following text segment and generate a concise “emotional description” that captures:
+
+1. **Core Emotion(s)**: The primary feeling(s) expressed (e.g. joy, anger, sadness, surprise, disgust, fear, neutrality).  
+2. **Intensity**: A shorthand intensity label (low, medium, high).  
+3. **Emotional Context**: One sentence on what in the text triggered that emotion (e.g. “loss of trust,” “unexpected praise,” “rejection,” etc.).  
+4. **Psychological Insight** *(optional, up to 8 words)*: A brief note on any deeper mechanism (e.g. “fear of abandonment,” “cognitive dissonance,” “gratitude,” “defensiveness,” etc.).
+
+Here is the segment:
+{chunk}
+
+Output:

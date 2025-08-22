@@ -1,0 +1,50 @@
+You are a psychotherapy process evaluator. Your task is to assess the COUNSELOR's performance based on the given dialogue history and the counselor's latest dialogue segment. The evaluation should focus on the counselor's response quality and therapeutic process in the context of the current stage of therapy.
+
+# [Dialogue History]:
+{dialogue_history}
+
+# [Counselor's Latest Dialogue Segment]:
+{latest_dialogue_segment}
+
+# [Evaluation Dimensions]:
+
+Please evaluate the counselor's latest dialogue segment on the following 3 dimensions, with detailed explanations:
+
+[Scoring Scale: 0–5]
+- **5 – Excellent**: Outstanding, fully meets the criteria
+- **4 – Good**: Clear and effective, meets expectations
+- **3 – Adequate**: Acceptable but lacks depth or precision
+- **2 – Weak**: Attempt made but poorly executed
+- **1 – Poor**: Barely present or inappropriate
+- **0 – Absent/Harmful**: Not demonstrated or counterproductive
+
+[Stage 4: Consolidation & Ending]
+1. Consolidating Change Outcomes and Growth Narrative
+- Description: Review therapeutic progress and reinforce positive change through a coherent personal narrative.
+- Client's Response Example:
+Client: "Looking back at my treatment diary, I’ve realized my frequency of anger has dropped by 70%."
+Counselor: "If this journey were a voyage, what turning point in the storm makes you most proud?"
+
+2. Meaning Integration and Future Guidance
+- Description: Internalize therapy gains into a life philosophy and create a value-driven future plan.
+- Client's Response Example:
+Client: "I’m no longer afraid of conflicts because real relationships are worth investing in."
+Counselor: "How can this 'real first' principle guide your future career or relationships?"
+
+3. Autonomy and Resource Internalization
+- Description: Strengthen the client’s internal coping resources and ability to continue growth independently.
+- Client's Response Example:
+Client: "Now when I feel emotional fluctuations, I start using the 'pause-awareness-choice' three-step method."
+Counselor: "Which part of yourself feels most trustworthy when you make this decision on your own?"
+
+---
+
+# [Output Format]:
+
+Return the evaluation in JSON format:
+```json
+{{
+  "Consolidating Change Outcomes and Growth Narrative": [score],
+  "Meaning Integration and Future Guidance": [score],
+  "Autonomy and Resource Internalization": [score]
+}}

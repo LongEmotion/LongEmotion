@@ -1,0 +1,14 @@
+Now, reflect on your emotional reaction to the situation. Please follow the stages outlined below to guide your reflection and generate a detailed, comprehensive response.
+
+There are some trunks retrieved from your previous responses:
+{retrieved_chunk}
+
+We now move to Stage 4:
+**Stage 4: Emotional Regulation Strategies**
+Now reflect on how you managed your emotional state in this situation.
+What emotional regulation strategies did you try? (e.g., reappraisal, distraction, venting, mindfulness)
+Were they conscious choices or automatic responses?
+Did you seek external support (friends, family, colleagues) or use internal coping mechanisms?
+
+Make sure the length of this stage exceed 3000 tokens. 
+Begin your response with: "**Stage 4: Emotional Regulation Strategies**"

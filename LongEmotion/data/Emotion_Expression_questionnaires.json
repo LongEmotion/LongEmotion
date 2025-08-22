@@ -1,0 +1,41 @@
+[
+    {
+        "name": "PANAS",
+        "questions": {
+            "1": "Interested",
+            "2": "Distressed",
+            "3": "Excited",
+            "4": "Upset",
+            "5": "Strong",
+            "6": "Guilty",
+            "7": "Scared",
+            "8": "Hostile",
+            "9": "Enthusiastic",
+            "10": "Proud",
+            "11": "Irritable",
+            "12": "Alert",
+            "13": "Ashamed",
+            "14": "Inspired",
+            "15": "Nervous",
+            "16": "Determined",
+            "17": "Attentive",
+            "18": "Jittery",
+            "19": "Active",
+            "20": "Afraid"
+        },
+        "compute_mode": "SUM",
+        "prompt": "You can only reply the numbers from 1 to 5. SCENARIO Please indicate the extent of your feeling in all the following emotions on a scale of 1 to 5. 1 denotes \"very slightly or not at all\", 2 denotes \"a little\", 3 denotes \"moderately\", 4 denotes \"quite a bit\", and 5 denotes \"extremely\". Please score all emotions one by one using the scale from 1 to 5:",
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5.",
+        "scale": 6,
+        "reverse": [],
+        "categories": [
+            {
+                "cat_name": "Positive Affect",
+                "cat_questions": [1, 3, 5, 9, 10, 12, 14, 16, 17, 19]
+            },
+            {
+                "cat_name": "Negative Affect",
+                "cat_questions": [2, 4, 6, 7, 8, 11, 13, 15, 18, 20]
+            }
+        ]
+    }]

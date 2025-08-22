@@ -1,0 +1,5 @@
+Based on the following relevant content from the psychological consultation report, provide a concise 1-2 sentence summary of the individual's psychological symptoms:
+
+{context}
+
+Please provide a brief summary focusing on the main symptoms and manifestations (emotional, behavioral, cognitive, physical symptoms, etc.) in 1-2 sentences only. Do not provide detailed explanations or direct answers. 

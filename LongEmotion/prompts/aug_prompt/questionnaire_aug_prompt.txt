@@ -1,0 +1,10 @@
+Here is a segment from a prior response:
+
+{chunk_text}
+
+Summarize the main points with special attention to:
+- The emotional tone or intensity
+- How emotions interact with thoughts, beliefs, or memories
+- Any internal conflicts or emotional shifts
+
+The summary will be used to guide the next stage of emotional expression.

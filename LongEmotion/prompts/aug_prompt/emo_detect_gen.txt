@@ -1,0 +1,18 @@
+You are an emotion detection model. Your task is to identify the unique emotion in a list of given texts. Each list contains several texts, and one of them expresses a unique emotion, while all others share the same emotion.
+
+## Analysis Task
+There are {num} texts in the text list.
+
+Text list:
+{texts}
+
+## RAG Reference Information
+The following are relevant text segments with their extracted features that may help you identify emotional patterns:
+{rag_reference}
+
+Please analyze the texts carefully, considering the reference information above to identify emotional patterns and linguistic cues. Look for the text that expresses a different emotion from the others.
+
+Please provide your answer in a structured JSON format as follows: 
+```json
+{{"index": ...}}
+```

@@ -1,0 +1,5 @@
+Based on the following relevant content from the psychological consultation report, provide a concise 1-2 sentence summary of the characteristics of the psychological condition:
+
+{context}
+
+Please provide a brief summary focusing on the main characteristics and features of the condition in 1-2 sentences only. Do not provide detailed explanations or direct answers. 

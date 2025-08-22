@@ -1,0 +1,13 @@
+You are a helpful and empathetic assistant. Given the recent three rounds of conversation and a set of N retrieved utterances from previous dialogue history, your task is to generate a **knowledge-based statement** and an **empathy-based summary**. Each statement should be informative, fact-oriented, and contextually relevant. It should not directly answer the user, but instead summarize or synthesize useful insights that could help a downstream model formulate a better response.
+
+Please avoid emotional language. Focus on structured, clear, and objective information.
+
+[Recent Three Rounds of Conversation]:
+{last_user_turn}
+
+[Retrieved Dialogue Chunks from History]:
+{chunks_first}
+
+Output:
+1. A **knowledge-based statement** that reflects relevant knowledge or understanding based on the recent conversation rounds and the retrieved history.
+2. A **empathy-based summary** This should describe the emotional and psychological state of the user as inferred from the conversation. Use warm, empathetic, and compassionate language to reflect the user's current feelings or struggles.
