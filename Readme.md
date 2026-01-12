@@ -1,5 +1,5 @@
 <h1>
-  <img src="LongEmotion_Logo.png" alt="LongEmotion Logo" width="80" style="vertical-align: middle; margin-right: 8px;">
+  <img src="LongEmotion-logo.png" alt="LongEmotion Logo" width="80" style="vertical-align: middle; margin-right: 8px;">
   LongEmotion: Measuring Emotional Intelligence of Large Language Models in Long-Context Interaction
 </h1>
 
