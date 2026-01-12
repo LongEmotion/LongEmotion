@@ -1,0 +1,18 @@
+[Dialogue History]:
+{dialogue_history}
+
+[Recent Three Rounds of Conversation]:
+{latest_reply}
+
+Task:
+Please respond as a counselor. Your response should be professional, empathetic, and constructive. Address the user's concerns directly and keep the tone supportive and conversational.
+
+At the end of your reasoning, you must output the final answer in the following JSON format:
+
+```json
+{{"response": "..."}}
+```
+
+Do not include your reasoning or search steps in the final output.
+Only output the final JSON answer once you have completed all reasoning.
+

@@ -1,0 +1,16 @@
+Task:
+From the following psychological consultation report, extract only the parts directly describing the treatment process experienced by the individual.
+
+The relevant content:
+{context}
+
+Instructions:
+
+Identify and keep only sentences or phrases that describe the therapeutic process, including the counselor’s guidance, session progression, methods, or key interventions.
+Do not rewrite, summarize, or interpret the text.
+Do not include inferred analysis, added explanations, or outcome evaluations.
+Preserve the original wording as much as possible while removing irrelevant or repetitive information.
+The goal is to retain only the factual descriptions of the treatment process as presented in the report.
+
+Output format:
+Return the extracted text only, keeping the original phrasing related to the treatment process, without any modification or additional commentary.

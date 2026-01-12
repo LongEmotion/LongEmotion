@@ -1,0 +1,7 @@
+(For Evokec Emotion Measure Only) Imagine you are the protagonist in the situation: {SITUATION}
+
+Please indicate your degree of agreement regarding each statement. Here are the statements: {statements}
+
+You can only reply the numbers from 1 to 5. Please indicate the extent of your feeling in all the following emotions on a scale of 1 to 5. 1 denotes "very slightly or not at all", 2 denotes "a little", 3 denotes "moderately", 4 denotes "quite a bit", and 5 denotes "extremely". Please score all emotions one by one using the scale from 1 to 5:
+Your task is :
+Please first score each statement one by one on a scale of 1 to 5, and for each statement, provide a brief explanation of why you chose that score. 

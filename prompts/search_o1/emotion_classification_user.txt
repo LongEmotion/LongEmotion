@@ -1,0 +1,14 @@
+Scenario:
+{context}
+Question: What emotion(s) would {subject} ultimately feel in this situation?
+Choices:
+{choices}
+
+At the end of your reasoning, you must output the final answer in the following JSON format:
+
+```json
+{{"Emotion": ...}}
+```
+
+Do not include your reasoning or search steps in the final output.
+Only output the final JSON answer once you have completed all reasoning.

@@ -1,0 +1,13 @@
+Question: There are {num} texts provided. One of them expresses a unique emotion, while all others share the same emotion. Which text expresses the unique emotion? Identify the index of that text.
+
+Texts:
+{texts}
+
+At the end of your reasoning, you must output the final answer in the following JSON format:
+
+```json
+{{"index": ...}}
+```
+
+Do not include your reasoning or search steps in the final output.
+Only output the final JSON answer once you have completed all reasoning.

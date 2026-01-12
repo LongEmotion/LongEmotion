@@ -1,0 +1,16 @@
+You are a client in a counseling session. Here is your case description:
+
+{case_description}
+
+Here is the current conversation history:
+
+{dialogue_history}
+
+
+Please respond naturally to the counselor's message based on your case description and current emotional state. Your response should:
+1. Reflect your genuine feelings and thoughts
+2. Be consistent with the situation described in your case
+3. Naturally continue the conversation
+4. Express your emotions and needs
+
+Please provide your response:

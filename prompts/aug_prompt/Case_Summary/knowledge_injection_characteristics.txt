@@ -1,0 +1,14 @@
+From the following psychological consultation report, extract only the parts directly describing the characteristics of the psychological condition.
+
+The relevant content:
+{context}
+
+Instructions:
+Identify and keep only sentences or phrases that describe the observable features or characteristics of the psychological condition (e.g., emotional patterns, cognitive tendencies, interpersonal behaviors).
+Do not rewrite, summarize, or interpret the text.
+Do not include inferred analysis, diagnostic terms, or external commentary.
+Maintain the original wording as much as possible, removing unrelated or repetitive content.
+The goal is to retain only the core descriptive parts about the condition’s characteristics.
+
+Output format:
+Return the extracted text only, preserving the original phrasing relevant to the condition’s characteristics, without additional explanation or modification.

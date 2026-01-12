@@ -1,0 +1,15 @@
+From the following psychological consultation report, extract only the parts directly describing the psychological symptoms exhibited by the individual.
+
+The relevant content:
+{context}
+
+Instructions:
+
+Identify and keep only sentences or phrases that describe the individual’s emotional, behavioral, cognitive, or physiological symptoms.
+Do not rewrite, summarize, or interpret the text.
+Do not include diagnostic terms, inferred causes, or analytical commentary.
+Preserve the original wording as much as possible while removing irrelevant or repetitive content.
+The goal is to retain only the original descriptions of symptoms presented in the report.
+
+Output format:
+Return the extracted text only, containing the key symptom-related expressions from the original input, without any modification or additional explanation.

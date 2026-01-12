@@ -1,0 +1,15 @@
+Task:
+From the following psychological consultation report, extract only the parts directly describing the treatment effects and outcomes observed.
+
+The relevant content:
+{context}
+
+Instructions:
+Identify and keep only sentences or phrases that mention the emotional, cognitive, or behavioral changes observed after treatment, including both progress and remaining challenges.
+Do not rewrite, summarize, or interpret the text.
+Do not include inferred mechanisms, causes, or evaluative commentary.
+Preserve the original wording as much as possible while removing irrelevant or repetitive information.
+The goal is to retain only the factual descriptions of treatment outcomes present in the report.
+
+Output format:
+Return the extracted text only, preserving the original phrasing that reflects the treatment’s effects and outcomes, without additional explanation or modification.

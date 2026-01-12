@@ -1,0 +1,26 @@
+Scenario:
+Case Description: {Case_description}
+Consultation Process: {Consultation_process}
+Experience and Reflection: {Experience_and_reflection}
+
+Question: Please summarize the psychological counseling case with the following aspects:
+- Causes: The underlying or immediate causes of the individual's psychological issues
+- Symptoms: The self-reported or observable physiological, psychological, or behavioral symptoms
+- Treatment process: The psychological therapy approaches, techniques, and stage-based interventions applied
+- Characteristics of the illness: Key features or developmental patterns of the psychological problem
+- Treatment effect: The impact or outcome of the treatment, including changes in the individual's condition
+
+At the end of your reasoning, you must output the final answer in the following JSON format:
+
+```json
+{{
+    "causes":"...",
+    "symptoms":"...",
+    "treatment_process":"...",
+    "characteristics_of_illness":"...",
+    "treatment_effect":"..."
+}}
+```
+
+Do not include your reasoning or search steps in the final output.
+Only output the final JSON answer once you have completed all reasoning.

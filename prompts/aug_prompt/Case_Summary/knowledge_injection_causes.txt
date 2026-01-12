@@ -1,0 +1,15 @@
+Task:
+From the following psychological consultation report, extract only the parts directly related to the causes of the individual's psychological issues.
+
+The content:
+{context}
+
+Instructions:
+Identify and keep only the sentences or phrases that describe or indicate the causes of the psychological issues.
+Do not rewrite, summarize, or interpret the text.
+Do not include analysis, explanations, or psychological mechanisms.
+Maintain the original wording as much as possible; delete irrelevant or repetitive information.
+Output should be a trimmed excerpt preserving factual details about causes only.
+
+Output format:
+Return the extracted text only, containing the key cause-related content from the original input, without any added commentary or modification.
