@@ -1,0 +1,16 @@
+group: longemotion_emotion_classification
+group_alias: Emotion Classification (EC)
+tag:
+  - longemotion
+  - emotion_classification
+
+task:
+  - longemotion_emotion_classification_emobench
+  - longemotion_emotion_classification_finentity
+
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+
+metadata:
+  version: 1.0

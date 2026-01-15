@@ -1,0 +1,39 @@
+task: longemotion_fileqa
+task_alias: File QA
+tag:
+  - longemotion
+  - fileqa
+
+dataset_path: json
+dataset_kwargs:
+  data_files: ./data/Emotion_QA.jsonl
+test_split: train
+
+output_type: generate_until
+generation_kwargs:
+  temperature: 0.8
+  top_p: 0.9
+  max_gen_toks: 256
+
+doc_to_text: |
+  You are given a scientific article and a question. Answer the question concisely. If the question is a yes/no question, answer "yes", "no". Do not provide any explanation.
+
+  Article: {{context}}
+
+  Answer the question based on the above article concisely. If the question is a yes/no question, answer "yes", "no". Do not provide any explanation.
+  
+  Question: {{problem}}
+  
+  Answer:
+
+doc_to_target: "{{answer}}"
+
+process_results: !function utils.get_qa_f1_with_score
+
+metric_list:
+  - metric: "qa_f1_score"
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0
