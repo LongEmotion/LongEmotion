@@ -150,36 +150,48 @@ After finishing all the settings, run **"bash run.sh"** to start evaluation!
 
 ### 🔧 Alternative Evaluation with lm_eval
 
-You can also evaluate models using the `lm_eval` framework. Below are the commands for different tasks:
+You can also evaluate models using the `lm_eval` framework. 
 
-#### Emotion Classification (EC)
+#### Installation
+
+First, install the lm_eval package:
 
 ```bash
-uv run lm_eval --model vllm     --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8     --tasks longemotion_emotion_classification     --include_path ./tasks     --output_path results/emobench/ --log_samples --apply_chat_template --system_instruction "Please identify the emotion of the given subject in the scenario."
+pip install lm-eval
 ```
 
-#### Emotion Detection (ED)
+#### Running Tasks
+
+Below are the commands for different tasks:
+
+##### Emotion Classification (EC)
 
 ```bash
-uv run lm_eval --model vllm     --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8     --tasks longemotion_emotion_detection     --include_path ./tasks     --output_path results/emobench/ --log_samples --apply_chat_template --system_instruction "You are an emotion detection model. Your task is to identify the unique emotion in a list of given texts. Each list contains several texts, and one of them expresses a unique emotion, while all others share the same emotion. You need to determine the index of the text that expresses the unique emotion."
+lm_eval --model vllm --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8 --tasks longemotion_emotion_classification --include_path ./tasks --output_path results/emobench/ --log_samples --apply_chat_template --system_instruction "Please identify the emotion of the given subject in the scenario."
 ```
 
-#### Emotion QA (QA)
+##### Emotion Detection (ED)
 
 ```bash
-uv run lm_eval --model vllm     --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8     --tasks longemotion_fileqa     --include_path ./tasks     --output_path results/emobench/ --log_samples --apply_chat_template --system_instruction "You are a helpful assistant that answers questions based on the given context. Please provide accurate and concise answers."
+lm_eval --model vllm --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8 --tasks longemotion_emotion_detection --include_path ./tasks --output_path results/emobench/ --log_samples --apply_chat_template --system_instruction "You are an emotion detection model. Your task is to identify the unique emotion in a list of given texts. Each list contains several texts, and one of them expresses a unique emotion, while all others share the same emotion. You need to determine the index of the text that expresses the unique emotion."
 ```
 
-#### Emotion Summary (ES)
+##### Emotion QA (QA)
 
 ```bash
-uv run lm_eval --model vllm     --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8     --tasks longemotion_report_summary     --include_path ./tasks     --output_path results/emobench/ --log_samples --apply_chat_template
+lm_eval --model vllm --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8 --tasks longemotion_fileqa --include_path ./tasks --output_path results/emobench/ --log_samples --apply_chat_template --system_instruction "You are a helpful assistant that answers questions based on the given context. Please provide accurate and concise answers."
 ```
 
-#### Multi-turn Conversation (MC-4)
+##### Emotion Summary (ES)
 
 ```bash
-uv run lm_eval --model vllm     --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8     --tasks longemotion_multiconv     --include_path ./tasks     --output_path results/emobench/ --log_samples --apply_chat_template --system_instruction "You are a professional counselor. Please respond based on the conversation history. Your response should be professional, empathetic, and constructive."
+lm_eval --model vllm --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8 --tasks longemotion_report_summary --include_path ./tasks --output_path results/emobench/ --log_samples --apply_chat_template
+```
+
+##### Multi-turn Conversation (MC-4)
+
+```bash
+lm_eval --model vllm --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,tensor_parallel_size=8 --tasks longemotion_multiconv --include_path ./tasks --output_path results/emobench/ --log_samples --apply_chat_template --system_instruction "You are a professional counselor. Please respond based on the conversation history. Your response should be professional, empathetic, and constructive."
 ```
 
 ---
