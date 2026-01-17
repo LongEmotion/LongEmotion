@@ -3,15 +3,17 @@
   LongEmotion: Measuring Emotional Intelligence of Large Language Models in Long-Context Interaction
 </h1>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2509.07403"><img src="https://img.shields.io/badge/arXiv-2509.07403-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://huggingface.co/LongEmotion"><img src="https://img.shields.io/badge/🤗-Dataset-yellow.svg" alt="Dataset"></a>
+</p>
+
 ---
 
 ## 🌟 Overview 
 
 **LongEmotion** is a comprehensive benchmark designed to evaluate the **Emotional Intelligence (EI)** of Large Language Models (LLMs) in **long-context scenarios**.  
 It includes six carefully constructed tasks that test emotion recognition, psychological knowledge application, and empathetic generation — areas crucial for emotionally coherent and human-aligned AI systems.
-
-**📄 Paper:** [LongEmotion: Measuring Emotional Intelligence of Large Language Models in Long-Context Interaction](https://arxiv.org/abs/2509.07403)  
-**🤗 HuggingFace:** [LongEmotion Dataset](https://huggingface.co/LongEmotion)
 
 ---
 
