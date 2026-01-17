@@ -1,0 +1,75 @@
+task: longemotion_report_summary
+task_alias: Report Summary
+tag:
+  - longemotion
+  - report_summary
+
+custom_dataset: !function utils.load_emotion_summary_dataset
+dataset_kwargs:
+  data_files: ./data/Emotion_Summary.jsonl
+test_split: train
+
+output_type: generate_until
+generation_kwargs:
+  until:
+    - "```\n"
+  temperature: 0.8
+  top_p: 0.9
+  max_gen_toks: 8192
+
+doc_to_text: |
+  You are a psychological counseling expert. You have a psychological counseling report with the following content:
+
+  Case_description: Describes the background and situation of the counseling case.
+
+  Consultation_process: Details the counseling process, including key points and progress made in each session.
+
+  Experience_and_reflection: Summarizes the experiences, reflections, and insights from the counseling sessions.
+
+  Please summarize the following information based on the content provided:
+
+  Causes: The underlying or immediate causes of the individual's psychological issues.
+
+  Symptoms: The self-reported or observable physiological, psychological, or behavioral symptoms exhibited by the individual.
+
+  Treatment process: The psychological therapy approaches, techniques, and stage-based interventions applied during the counseling process.
+
+  Characteristics of the illness: Key features or developmental patterns of the psychological problem.
+
+  Treatment effect: The impact or outcome of the treatment, including changes in the individual's condition.
+
+  Input:
+
+  Case_description: {{case_description}}
+
+  Consultation_process: {{consultation_process}}
+  
+  Experience_and_reflection: {{experience_and_reflection}}
+
+  Please provide your answer in a structured JSON format as follows:
+
+  ```json
+  {% raw %}{"causes":"...","symptoms":"...","treatment_process":"...","characteristics_of_illness":"...","treatment_effect":"..."}{% endraw %}
+  ```
+
+doc_to_target: |
+  Causes: {{causes}}
+  Symptoms: {{symptoms}}
+  Treatment process: {{treatment_process}}
+  Characteristics of the illness: {{characteristics_of_illness}}
+  Treatment effect: {{treatment_effect}}
+
+filter_list:
+  - name: "json_extract"
+    filter:
+      - function: !function utils.ExtractReportSummaryFilter
+
+process_results: !function utils.get_report_summary_score
+
+metric_list:
+  - metric: "score"
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0

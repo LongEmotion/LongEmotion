@@ -1,0 +1,46 @@
+task: longemotion_multiconv
+task_alias: Multi-turn Conversation (MC-4)
+tag:
+  - longemotion
+  - multiconv
+
+dataset_path: json
+dataset_name: null
+dataset_kwargs:
+  data_files: ./data/Emotion_Conversations.jsonl
+test_split: train
+
+process_docs: !function utils.process_emotion_conversations_docs
+
+output_type: generate_until
+generation_kwargs:
+  until:
+    - "```\n"
+  temperature: 0.8
+  top_p: 0.9
+  max_gen_toks: 8192
+
+doc_to_text: |
+  Please respond as a professional counselor based on the following dialogue history. Your response should be professional, empathetic, and constructive. IMPORTANT: Generate ONLY ONE response as a counselor, do not continue the conversation further.
+
+  Dialogue history:
+  {{dialogue_history}}
+
+  Please respond as a counselor (ONE response only): 
+
+doc_to_target: ""
+
+filter_list:
+  - name: "extract_counselor_response"
+    filter:
+      - function: !function utils.ExtractCounselorResponseFilter
+
+process_results: !function utils.get_multiconv_score
+
+metric_list:
+  - metric: "score"
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0
